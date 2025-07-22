@@ -23,6 +23,8 @@ Este é o código principal do script. Ele foi projetado para ser um "template",
 | `USUARIO_A_IGNORAR` | O nome da pasta a ser ignorada dentro de `ORIGEM_Z`.       | `josepholiveira`                             |
 | `CAMINHO_LOG`       | O caminho completo, incluindo o nome do arquivo de log.    | `"C:\Users\josepholiveira\backup_log.txt"`   |
 
+![Exemplo de Uso](exemplo.gif)
+
 ```batch
 @echo off
 REM =================================================================
