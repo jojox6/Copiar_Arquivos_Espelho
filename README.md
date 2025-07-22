@@ -17,7 +17,7 @@ Este é o código principal do script. Ele foi projetado para ser um "template",
 ```batch
 @echo off
 REM =================================================================
-REM TEMPLATE DE SCRIPT DE BACKUP - SEGURO PARA O GITHUB
+REM TEMPLATE DE SCRIPT DE BACKUP
 REM =================================================================
 
 REM --- Validacao basica para garantir que as variaveis foram definidas ---
