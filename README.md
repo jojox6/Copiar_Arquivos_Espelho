@@ -14,6 +14,15 @@ Um script de backup robusto e configurável que utiliza o utilitário `robocopy`
 
 Este é o código principal do script. Ele foi projetado para ser um "template", lendo suas configurações a partir de variáveis de ambiente.
 
+| Variável            | Descrição                                                  | Exemplo                                      |
+| ------------------- | ---------------------------------------------------------- | -------------------------------------------- |
+| `ORIGEM_Z`          | O caminho da unidade de rede principal a ser copiada.      | `Z:\`                                        |
+| `ORIGEM_Y`          | O caminho da unidade de rede secundária.                   | `Y:\`                                        |
+| `DESTINO_BKP`       | A pasta de destino para o backup principal.                | `"E:\BKP_2025"`                              |
+| `DESTINO_PUBLICO`   | A subpasta de destino para o backup secundário.            | `"E:\BKP_2025\PUBLICO"`                      |
+| `USUARIO_A_IGNORAR` | O nome da pasta a ser ignorada dentro de `ORIGEM_Z`.       | `josepholiveira`                             |
+| `CAMINHO_LOG`       | O caminho completo, incluindo o nome do arquivo de log.    | `"C:\Users\josepholiveira\backup_log.txt"`   |
+
 ```batch
 @echo off
 REM =================================================================
@@ -45,11 +54,3 @@ echo Backup executado com sucesso em %date% %time% >> %CAMINHO_LOG%
 echo.
 echo --- Backup Concluido! ---
 
-| Variável            | Descrição                                                  | Exemplo                                      |
-| ------------------- | ---------------------------------------------------------- | -------------------------------------------- |
-| `ORIGEM_Z`          | O caminho da unidade de rede principal a ser copiada.      | `Z:\`                                        |
-| `ORIGEM_Y`          | O caminho da unidade de rede secundária.                   | `Y:\`                                        |
-| `DESTINO_BKP`       | A pasta de destino para o backup principal.                | `"Exemplo: E:\BKP_2025"`                              |
-| `DESTINO_PUBLICO`   | A subpasta de destino para o backup secundário.            | `"Exemplo: E:\BKP_2025\PUBLICO"`                       |
-| `USUARIO_A_IGNORAR` | O nome da pasta a ser ignorada dentro de `ORIGEM_Z`.       | `exemplo de nome de pasta:josepholiveira`                             |
-| `CAMINHO_LOG`       | O caminho completo, incluindo o nome do arquivo de log.    | `"C:\Users\seuusuarioaqui\backup_log.txt"`   |
