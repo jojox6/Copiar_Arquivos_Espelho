@@ -18,10 +18,10 @@ Este é o código principal do script. Ele foi projetado para ser um "template",
 | ------------------- | ---------------------------------------------------------- | -------------------------------------------- |
 | `ORIGEM_Z`          | O caminho da unidade de rede principal a ser copiada.      | `Z:\`                                        |
 | `ORIGEM_Y`          | O caminho da unidade de rede secundária.                   | `Y:\`                                        |
-| `DESTINO_BKP`       | A pasta de destino para o backup principal.                | `"E:\BKP_2025"`                              |
-| `DESTINO_PUBLICO`   | A subpasta de destino para o backup secundário.            | `"E:\BKP_2025\PUBLICO"`                      |
-| `USUARIO_A_IGNORAR` | O nome da pasta a ser ignorada dentro de `ORIGEM_Z`.       | `josepholiveira`                             |
-| `CAMINHO_LOG`       | O caminho completo, incluindo o nome do arquivo de log.    | `"C:\Users\josepholiveira\backup_log.txt"`   |
+| `DESTINO_BKP`       | A pasta de destino para o backup principal.                | `"Exemplo: E:\BKP_2025"`                     |
+| `DESTINO_PUBLICO`   | A subpasta de destino para o backup secundário.            | `"Exemplo: E:\BKP_2025\PUBLICO"`             |
+| `USUARIO_A_IGNORAR` | O nome da pasta a ser ignorada dentro de `ORIGEM_Z`.       | `Exemplo de pasta:josepholiveira`            |
+| `CAMINHO_LOG`       | O caminho completo, incluindo o nome do arquivo de log.    | `"C:\Users\seuUsuarioAqui\backup_log.txt"`   |
 
 ![Exemplo de Uso](exemplo.gif)
 
